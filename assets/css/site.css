@@ -122,15 +122,6 @@ header .content .text ol li small {
   font-size: 12px;
 }
 
-/* Media queries */
-
-@media screen and (max-width: 400px) {
-  header {
-    height: 100%;
-  }
-
-}
-
 /* Outros estilos */
 
 .fa-heart {
@@ -143,4 +134,38 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.fas.fa-link {
+  display: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 400px) {
+  .top .top-view .content-top {
+    text-align: center;
+  }
+  header {
+    height: 100%;
+  }
+
+  header .content {
+    position: unset;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  header .content h1 {
+    padding-top: 20px;
+  }
+
+  header .content .text {
+    padding: 20px;
+  }
+  .fas.fa-link {
+    display: inline;
+  }
 }
