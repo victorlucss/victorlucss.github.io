@@ -10,128 +10,43 @@ a, a:hover, a:focus, a:visited {
 }
 
 body {
-  background: #eeeeee;
+  background: #ddd;
   font: 14px "Roboto","Trebuchet MS", Tahoma, Arial, sans-serif;
   font-weight: 300;
   color: #666666;
 }
 
 .top {
-  position: relative;
   width: 100%;
   height: 300px;
-  z-index: 7;
-}
-
-.top .top-img {
   background: url("../img/top-image.jpg");
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
+  box-shadow: 0 5px 15px 0 rgba(115, 75, 109, 0.9);
 }
+
 
 .top .top-view {
   background: -webkit-linear-gradient(to right, rgba(66, 39, 90, 0.9), rgba(115, 75, 109, 0.9));
   background: -moz-linear-gradient(to right, rgba(66, 39, 90, 0.9), rgba(115, 75, 109, 0.9));
   background: linear-gradient(to right, rgba(66, 39, 90, 0.9), rgba(115, 75, 109, 0.9));
   width: 100%;
-  height: 100vh;
-  position: absolute;
+  height: 300px;
+  position: relative;
   top: 0;
 }
 
 .top .top-view .content-top {
   color: #ffffff;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.top .top-view .content-top h1 {
-  font-weight: 300;
-  font-size: 34px;
 }
 
 .top .top-view .content-top small {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 100;
 }
 
-.menu {
-  width: 100%;
-  height: 100%;
-}
 
-.menu ul {
-  list-style: none;
-  margin: 0 auto;
-  width: 100%;
-  height: 50px;
-}
-
-.menu ul li {
-  display: inline-block;
-  float: left;
-  width: calc(100% / 4);
-  cursor: pointer;
-  animation: all 0.2s;
-  transition: all 0.2s;
-  text-align: center;
-  padding: 10px 0;
-  margin: 0;
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.menu ul li.active {
-  background: rgba(115, 75, 109, 0.9);
-  color: #ffffff;
-}
-
-.menu ul li .fa {
-  padding-right: 5px;
-}
-
-.menu ul li:hover {
-  background: rgba(115, 75, 109, 0.9);
-  color: #ffffff;
-}
-
-.content {
-  width: 80%;
-  display: block;
-  text-align: justify;
-  margin: 0 auto;
-}
-
-.content .pagina-atual {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.content .pagina-atual .conteudo {
-  padding: 20px;
-}
-
-.content .pagina-atual .conteudo h1 {
-  font-weight: 300;
-}
-
-.content .pagina-atual .conteudo .reduzir {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.content .pagina-atual .conteudo .foto-perfil {
+.foto-perfil {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -143,39 +58,80 @@ body {
   margin: 0 auto;
 }
 
-.content .pagina-atual .conteudo ol {
+
+/* Estilos de Headers */
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+header.colored { /* Header colorido (roxo) */
+  background: -webkit-linear-gradient(to right, rgb(66, 39, 90), rgb(115, 75, 109));
+  background: -moz-linear-gradient(to right, rgb(66, 39, 90), rgb(115, 75, 109));
+  background: linear-gradient(to right, rgb(66, 39, 90), rgb(115, 75, 109));
+  color: #f5f5f5;
+}
+
+header.colored a {
+  color: #f5f5f5;
+  border-bottom: 1px dashed #f5f5f555;
+}
+
+header .content {
+  text-align: justify;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .content h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+header .content .text {
+  font-size: 1.2rem;
+}
+
+header .content .text ol {
   list-style: none;
 }
 
-.content .pagina-atual .conteudo ol li {
-  display: block;
+header .content .text ol li {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
   padding: 10px;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.1s;
 }
 
-.content .pagina-atual .conteudo ol li h2 {
-  padding: 5px 15px;
-  width: auto;
-  display: inline;
-  border-bottom: 2px #666 dashed;
-  text-align: left;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  font-size: 16px;
+header .content .text ol li:hover {
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
 }
 
-.content .pagina-atual .conteudo ol li :hover > h2 {
-  background: rgba(115, 75, 109, 0.2);
-  border-bottom-color: rgba(115, 75, 109, 0.9);
-  color: rgba(115, 75, 109, 0.9);
+header .content .text ol li a {
+  font-weight: bold;
 }
 
-.content small, .content footer {
-  color: #333333;
+header .content .text ol li small {
+  font-size: 12px;
 }
 
-.content small .fa-heart, .content footer .fa-heart {
-  color: #bb3232;
+/* Outros estilos */
+
+.fa-heart {
+  color: #f00;
+}
+
+a {
+  border-bottom: 1px dashed rgb(115, 75, 109);
+}
+
+.text-center {
+  text-align: center;
 }
