@@ -122,6 +122,15 @@ header .content .text ol li small {
   font-size: 12px;
 }
 
+/* Media queries */
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 100%;
+  }
+
+}
+
 /* Outros estilos */
 
 .fa-heart {
