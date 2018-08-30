@@ -143,6 +143,14 @@ a {
 /* Media queries */
 
 @media screen and (max-width: 400px) {
+  .top {
+    height: 150px;
+  }
+
+  .top .top-view {
+    height: 150px;
+  }
+
   .top .top-view .content-top {
     text-align: center;
   }
