@@ -1,0 +1,181 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover, a:focus, a:visited {
+  color: #666666;
+  text-decoration: none;
+}
+
+body {
+  background: #ddd;
+  font: 14px "Roboto", "Trebuchet MS", Tahoma, Arial, sans-serif;
+  font-weight: 300;
+  color: #666666;
+  overflow: hidden;
+}
+
+nav {
+  background: #ffffff;
+  position: fixed;
+  z-index: 99999999;
+}
+
+nav.opened .nav-bars span:nth-child(3), nav.opened .nav-bars span:nth-child(5) {
+  left: -50px;
+}
+
+nav.opened .nav-bars span:nth-child(4) {
+  left: 50px;
+}
+
+nav.opened .nav-bars span:nth-child(3), nav.opened .nav-bars span:nth-child(4), nav.opened .nav-bars span:nth-child(5) {
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav.opened .nav-bars span:nth-child(1), nav.opened .nav-bars span:nth-child(2) {
+  opacity: 1;
+}
+
+nav.opened .nav-bars span:nth-child(1) {
+  top: 25px;
+  left: 10px;
+}
+
+nav.opened .nav-bars span:nth-child(2) {
+  top: 25px;
+  right: 10px;
+}
+
+nav.opened ul.nav-items {
+  visibility: visible;
+  left: 0;
+  opacity: 1;
+}
+
+nav .nav-bars {
+  height: 38px;
+  cursor: pointer;
+  background: #ffffff;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+nav .nav-bars span {
+  background: #333333;
+  width: 50px;
+  height: 2px;
+  display: block;
+}
+
+nav .nav-bars span:nth-child(3) {
+  margin-top: 5px;
+}
+
+nav .nav-bars span:nth-child(3), nav .nav-bars span:nth-child(4), nav .nav-bars span:nth-child(5) {
+  position: relative;
+  left: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+nav .nav-bars span:nth-child(3), nav .nav-bars span:nth-child(4) {
+  margin-bottom: 10px;
+}
+
+nav .nav-bars span:nth-child(1), nav .nav-bars span:nth-child(2) {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 0;
+}
+
+nav .nav-bars span:nth-child(1) {
+  position: absolute;
+  top: -85px;
+  left: -100px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+nav .nav-bars span:nth-child(2) {
+  position: absolute;
+  top: -85px;
+  right: -100px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  opacity: 0;
+}
+
+nav ul.nav-items {
+  background: #ffffff;
+  list-style: none;
+  position: fixed;
+  bottom: 55px;
+  width: auto;
+  z-index: 888;
+  left: -150px;
+  opacity: 0;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+nav ul.nav-items li {
+  padding: 15px;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.principal {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#controller {
+  margin-left: 0;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  position: relative;
+  clear: both;
+  white-space: normal;
+}
+
+header.top {
+  background: url("../assets/top_bar.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .content {
+  text-align: justify;
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+header .content h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+header .content p {
+  font-size: 16px;
+}
+/*# sourceMappingURL=site.css.map */

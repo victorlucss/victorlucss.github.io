@@ -10,111 +10,60 @@
     <meta name="description" content="Portifólio e página-perfil do desevolvedor Victor Lucas">
 
     <title>Victor Lucas</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/site.css?v=01">
+    <link rel="stylesheet" type="text/css" href="src/css/site.css?v=01">
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 </head>
 <body>
-    <header class="top">
-        <div class="top-view">
-            <div class="content content-top">
+    
+
+    <nav id="nav">
+
+        <div class="nav-bars" id="nav-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-items" id="nav-items">
+            <li>About me</li>
+            <li>Projects</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="principal">
+
+        <header class="top" id="controller">
+            <div class="content">
                 <h1>Victor Lucas</h1>
-                <small>Graduando em Engenharia de Software</small>
+                <p>I'm passionate about innovation and I like to learn new technologies and methodologies. I currently have experience with front-end development with HTML, CSS, Javascript, and TypeScript, pre-processor SASS/SCSS, Vue.js, AngularJS/2+ and React, to back-end development I have experience with Spring Boot and Node.js (with Express and TypeScript). I also have experience with some tools, like Google Cloud, Firebase and Heroku. I am graduating in Software Engineering by the UFC - Universidade Federal do Ceará (Federal University of Ceará - Brazil), and currently, I'm a full-stack developer at LinkedBy, in São Paulo, SP.</p>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Header e conteúdo de Sobre mim -->
-    <header>
-        <div class="content">
-            <h1 class="title text-center">Sobre mim</h1>
-            <div class="text">
-                Meu nome é Victor Lucas, sou graduando em Engenharia de Software pela <a href="https://www.quixada.ufc.br/" target="blank">Universidade Federal do Ceará, Campus Quixadá <i class="fa fa-heart"></i></a> Desde cedo fui interessado em aprender e com doze anos criei
-                <a href="http://somentevictor.blogspot.com/2011/06/por-onde-comeco.html" target="blank" title="Link para acessar um dos meus primeiros blogs">meu primeiro blog</a>, onde me espantei ao ver XML pulando aos meus olhos enquanto tentava mudar a cor de fundo da minha página.
+        <!-- Header e conteúdo de Sobre mim -->
 
-                <br /><br />
+        <header>
+            <div class="content">
+                <h1 class="title text-center">Contato</h1>
 
-                Ainda que haja uma <a href="https://medium.com/@victorlcmonteiro/a-árdua-rotina-do-aprendizado-em-ti-7a90d39961db" target="blank" title="Meu primeiro artigo no Medium">árdua rotina no aprendizado constante</a>,
-                não deixo de me atualizar a respeito das novas tecnologias e tenho grande apreço pelo estudo de Javascript e suas bibliotecas. Gosto de ler (meu gênero preferido é ficção), tocar instrumentos e praticar o que aprendi para então ensinar para meus amigos e colegas.
+                <div class="text text-center"></div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Header e conteúdo de projetos pessoais -->
-    <header class="colored">
-        <div class="content">
-            <h1 class="title text-center">Projetos</h1>
+        <header>
+            <div class="content">
+                <h1 class="title text-center">teste123</h1>
 
-            <div class="text text-center">
-                <ol>
-                    <li>
-                        <a href="https://github.com/victoorlucas/Dontpad" target="blank"><i class="fas fa-link"></i> Reprodução Dontpad</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> NodeJS, Express, HTML e CSS</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/Bloob" target="blank"><i class="fas fa-link"></i> Bloob</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> Javascript, Python, C++ e HTML</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/savemyphoto" target="blank"><i class="fas fa-link"></i> SaveMyPhoto</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> NodeJS, Express, HTML e CSS</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/MinhaTeca" target="blank"><i class="fas fa-link"></i> MinhaTeca</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> PHP, HTML e CSS</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/victoorlucas.github.io/blob/master/assets/img/Capturar.PNG" target="blank"><i class="fas fa-link"></i> ReforceMe Mobile App</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> Java para Android e Firebase</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/ReforceMe" target="blank"><i class="fas fa-link"></i> ReforceMe Web App</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> VueJS, Firebase, HTML e CSS</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/inorus" target="blank"><i class="fas fa-link"></i> Inorus (hackaton)</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> Firebase, HTML, CSS e Javascript</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/sigeton" target="blank"><i class="fas fa-link"></i> SIGETON API Rest</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> NodeJS, Express e MongoDB</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/JuniorPanel" target="blank"><i class="fas fa-link"></i> JuniorPanel</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> SASS, jQuery, Firebase e HTML</small>
-                    </li>
-                    <li>
-                        <a href="https://github.com/victoorlucas/victoorlucas.github.io" target="blank"><i class="fas fa-link"></i> VictoorLucas</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> SASS, Javascript e HTML</small>
-                    </li>
-                    <li>
-                        <a href="http://henergi.com.br" target="blank"><i class="fas fa-link"></i> Henergi</a>
-                        <br />
-                        <small> <i class="fa fa-code"></i> HTML e CSS</small>
-                    </li>
-                </ol>
-
-                <ol>
-                    <li>
-                        <a href="https://github.com/victoorlucas/" target="blank">
-                            <i class="fab fa-github"></i>
-                            Conheça outros
-                        </a>
-                    </li>
-                </ol>
+                <div class="text text-center"></div>
             </div>
-        </div>
-    </header>
+        </header>
+
+    </div>
+
+    <script src="src/js/site.js"></script>
 </body>
 </html>
