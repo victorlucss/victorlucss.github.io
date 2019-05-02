@@ -1,4 +1,5 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
 *, body {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ a, a:hover, a:focus, a:visited {
 
 body {
   background: #ddd;
-  font: 14px "Roboto", "Trebuchet MS", Tahoma, Arial, sans-serif;
+  font: 14px 'Open Sans', "Trebuchet MS", Tahoma, Arial, sans-serif;
   font-weight: 300;
   color: #666666;
   overflow: hidden;
@@ -52,7 +53,7 @@ nav.opened .nav-bars span:nth-child(2) {
 
 nav.opened ul.nav-items {
   visibility: visible;
-  left: 0;
+  bottom: 75px;
   opacity: 1;
 }
 
@@ -115,14 +116,30 @@ nav .nav-bars span:nth-child(2) {
 nav ul.nav-items {
   background: #ffffff;
   list-style: none;
+  min-width: 10vw;
   position: fixed;
-  bottom: 55px;
+  bottom: 45px;
   width: auto;
   z-index: 888;
-  left: -150px;
+  left: 5px;
   opacity: 0;
+  visibility: hidden;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
+  border-radius: 5px;
+}
+
+nav ul.nav-items::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -5px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #fff;
 }
 
 nav ul.nav-items li {
@@ -130,7 +147,7 @@ nav ul.nav-items li {
   font-weight: 700;
   color: #333;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .principal {
@@ -140,8 +157,8 @@ nav ul.nav-items li {
 
 #controller {
   margin-left: 0;
-  -webkit-transition: all 0.75s;
-  transition: all 0.75s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 header {
@@ -171,11 +188,14 @@ header .content {
 }
 
 header .content h1 {
-  font-size: 36px;
-  font-weight: 500;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
 header .content p {
   font-size: 16px;
+  line-height: 23px;
 }
 /*# sourceMappingURL=site.css.map */
