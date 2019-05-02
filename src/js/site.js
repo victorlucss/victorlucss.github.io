@@ -6,22 +6,27 @@
 const nav = document.getElementById("nav");
 const menuBars = document.getElementById("nav-bars");
 const navItems = document.getElementById("nav-items");
+const controller = document.getElementById("controller");
 
-let once = 0;
+menuBars.addEventListener("click", () => nav.classList.toggle("opened"));
 
-menuBars.addEventListener("click", (event) => {
-    nav.classList.toggle("opened");
+let currentlyPage = 0;
 
-    if(once){
-        document.getElementById("controller").style.marginLeft = 0
-        once=0;
-    }else {
-        once=1
-        document.getElementById("controller").style.marginLeft = '-200%'
-    }
+Array.from(document.querySelectorAll("[data-page]")).map((node) => {
+    node.addEventListener("click", () => {
+        let page = node.dataset.page;
+        let marginLeft = page * -100;
 
-    
+        if(currentlyPage == page){
 
-});
+            controller.style.transform = `scale(1.1)`;
+            setTimeout(() => controller.style.transform = `scale(1)`, 500)
 
+            return;
+        }
 
+        currentlyPage = page;
+        
+        controller.style.marginLeft = `${marginLeft}%`;
+    })
+})
